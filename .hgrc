@@ -1,0 +1,29 @@
+[ui]
+username = Raymund Tuquero <raymund.tuquero@rga.com>
+
+[alias]
+ci = commit
+st = status
+co = checkout
+br = branch
+llog = log --limit 10 --graph
+
+[ui]
+ignore = ~/.hgignore
+
+[extensions]
+color =
+hgext.fetch=
+kilnauth= ~/hgext/kilnauth.py
+
+[auth]
+kiln.prefix = http://fogbugz.rga.com/kiln/Code/AARP/Group/Life_Reimagined_Site_Phase2
+kiln.username = raymund.tuquero@rga.com
+
+[color]
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = blue bold
+status.ignored = black bold

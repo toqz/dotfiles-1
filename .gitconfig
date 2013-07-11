@@ -2,7 +2,7 @@
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	# View the current working tree status using the short format
-	s = status -s
+	st = status -s
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
 	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
@@ -30,14 +30,19 @@
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
+	excludesfile = ~/.gitignore_global
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
-	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	# whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	autocrlf = input
+  	safecrlf = true
+	editor = subl -wl1
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
+#	branch = auto
+#	status = auto
+#   diff = auto
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -76,3 +81,7 @@
 
 [push]
 	default = matching
+
+[user]
+	name = RaymundT@ny.rga.com
+	email = raymund.tuquero@rga.com	
