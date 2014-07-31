@@ -3,6 +3,12 @@ export PATH="/usr/local/bin:$HOME/bin:/usr/bin:$PATH"
 
 export CLICOLOR=1
 
+# MySQL
+export PATH="/usr/local/mysql/bin:$PATH"
+
+# Android ADB
+export PATH="/Users/raymundt/Downloads/adt-bundle-mac-x86_64-20130729/sdk/platform-tools:$PATH"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.

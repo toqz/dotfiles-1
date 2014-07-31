@@ -21,7 +21,7 @@
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
-	autocrlf = input
+	autocrlf = input  #true false input
   	safecrlf = warn
 	editor = subl -wl1
 
