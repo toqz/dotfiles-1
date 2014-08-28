@@ -18,7 +18,6 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	alias = config --get-regexp alias
 
-
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
