@@ -12,7 +12,6 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias pw="cd ~/Programming/Web"
 alias pi="cd ~/Programming/IOS"
-# alias g="git"
 alias h="history"
 alias j="jobs"
 #alias v="vim"
@@ -21,6 +20,8 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 alias ll="ls -al"
+
+# RVM
 alias gs="rvm gemset"
 
 # Detect which `ls` flavor is in use
