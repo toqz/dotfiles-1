@@ -9,7 +9,7 @@
 	st = status
 	co = checkout
 	ci = commit
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	l = log --decorate --oneline  --graph
 	d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
 	tags = tag -l
 	branches = branch -a
