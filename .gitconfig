@@ -5,7 +5,7 @@
 	# Credit an author on the latest commit
 	# Interactive rebase with the given number of latest commits
 	#status
-	
+
 	st = status
 	co = checkout
 	ci = commit
@@ -23,7 +23,8 @@
 	excludesfile = ~/.gitignore
 	autocrlf = input  #true false input
   	safecrlf = warn
-	editor = subl -wl1
+	# editor = subl -wl1
+	editor = atom --wait
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -33,7 +34,7 @@
 	tool = opendiff
 
 [diff]
-	tool = opendiff	
+	tool = opendiff
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
@@ -59,4 +60,4 @@
 
 [user]
 	name = Raymund T.
-	email = raymund.tuquero@rga.com	
+	email = raymund.tuquero@rga.com
